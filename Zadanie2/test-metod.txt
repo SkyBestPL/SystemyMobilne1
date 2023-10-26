@@ -1,0 +1,60 @@
+onCreate() - uruchomienie aplikacji
+onStart() - uruchomienie aplikacji i wznowienie po zminimalizowaniu
+onResume() - uruchomienie aplikacji i wznowienie po zminimalizowaniu
+onPause() - zatrzymanie aplikacji poprzez zminimalizowanie, kliknięcie przycisku back i wyłączenie aplikacji
+onStop() - zatrzymanie aplikacji poprzez zminimalizowanie, kliknięcie przycisku back i wyłączenie aplikacji
+onDestroy() - wyłączenie aplikacji
+
+uruchomienie:
+2023-10-26 02:14:03.938  7896-7896  MainActivity            pl.edu.pb.wi                         D  onCreate() method called
+2023-10-26 02:14:04.363  7896-7896  MainActivity            pl.edu.pb.wi                         D  onStart() method called
+2023-10-26 02:14:04.368  7896-7896  MainActivity            pl.edu.pb.wi                         D  onResume() method called
+
+zminimalizowanie:
+2023-10-26 02:19:44.834  7896-7896  MainActivity            pl.edu.pb.wi                         D  onPause() method called
+2023-10-26 02:19:44.880  7896-7896  MainActivity            pl.edu.pb.wi                         D  onStop() method called
+
+powrót po zminimalizowaniu:
+2023-10-26 02:20:14.516  7896-7896  MainActivity            pl.edu.pb.wi                         D  onStart() method called
+2023-10-26 02:20:14.517  7896-7896  MainActivity            pl.edu.pb.wi                         D  onResume() method called
+
+wyłączenie:
+2023-10-26 02:21:17.082  7896-7896  MainActivity            pl.edu.pb.wi                         D  onPause() method called
+2023-10-26 02:21:17.134  7896-7896  MainActivity            pl.edu.pb.wi                         D  onStop() method called
+2023-10-26 02:21:35.843  7896-7896  MainActivity            pl.edu.pb.wi                         D  onDestroy() method called
+
+drugie uruchomienie:
+2023-10-26 02:22:36.775  9728-9728  MainActivity            pl.edu.pb.wi                         D  onCreate() method called
+2023-10-26 02:22:37.075  9728-9728  MainActivity            pl.edu.pb.wi                         D  onStart() method called
+2023-10-26 02:22:37.080  9728-9728  MainActivity            pl.edu.pb.wi                         D  onResume() method called
+
+po kliknięciu przycisku back:
+2023-10-26 12:20:16.386  9917-9917  MainActivity            pl.edu.pb.wi                         D  onPause() method called
+2023-10-26 12:20:17.623  9917-9917  MainActivity            pl.edu.pb.wi                         D  onStop() method called
+
+Kiedy obracamy urządzenie - wywołuje się onPause, onStop, onDestroy, onCreate, onStart, onResume 
+- aplikacja się restartuje do samego początku
+
+po obróceniu urządzenia:
+2023-10-26 02:23:36.167  9728-9728  MainActivity            pl.edu.pb.wi                         D  onPause() method called
+2023-10-26 02:23:36.170  9728-9728  MainActivity            pl.edu.pb.wi                         D  onStop() method called
+2023-10-26 02:23:36.180  9728-9728  MainActivity            pl.edu.pb.wi                         D  onDestroy() method called
+2023-10-26 02:23:36.220  9728-9728  MainActivity            pl.edu.pb.wi                         D  onCreate() method called
+2023-10-26 02:23:36.331  9728-9728  MainActivity            pl.edu.pb.wi                         D  onStart() method called
+2023-10-26 02:23:36.334  9728-9728  MainActivity            pl.edu.pb.wi                         D  onResume() method called
+
+po obróceniu urząrzenia z nową metodą:
+2023-10-26 02:50:03.288  5203-5203  MainActivity            pl.edu.pb.wi                         D  onPause() method called
+2023-10-26 02:50:03.295  5203-5203  MainActivity            pl.edu.pb.wi                         D  onStop() method called
+2023-10-26 02:50:03.299  5203-5203  MainActivity            pl.edu.pb.wi                         D  onSaveInstanceState() method called
+2023-10-26 02:50:03.302  5203-5203  MainActivity            pl.edu.pb.wi                         D  onDestroy() method called
+2023-10-26 02:50:03.403  5203-5203  MainActivity            pl.edu.pb.wi                         D  onCreate() method called
+2023-10-26 02:50:03.506  5203-5203  MainActivity            pl.edu.pb.wi                         D  onStart() method called
+2023-10-26 02:50:03.518  5203-5203  MainActivity            pl.edu.pb.wi                         D  onResume() method called
+
+kliknięcie przycisku back z nową metodą:
+2023-10-26 12:20:16.386  9917-9917  MainActivity            pl.edu.pb.wi                         D  onPause() method called
+2023-10-26 12:20:17.623  9917-9917  MainActivity            pl.edu.pb.wi                         D  onStop() method called
+2023-10-26 12:20:17.628  9917-9917  MainActivity            pl.edu.pb.wi                         D  onSaveInstanceState() method called
+
+onSaveInstanceState() zapisuje stan aplikacji przed obróceniem ekranu i przywraca go po obróceniu
