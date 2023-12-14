@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  Zadanie6
+
+  Created by user on 13/12/2023.
+  Copyright © 2023 SystemyMobilne. All rights reserved.
+*/
+"Information" = "Information";
+"The faculty is running %i programs at graduate and undergraduate level." = "The faculty is running %i programs at graduate and undergraduate level.";
+"image" = "wi-en";
