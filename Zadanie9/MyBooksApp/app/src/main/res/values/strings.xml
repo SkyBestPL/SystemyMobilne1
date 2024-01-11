@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">LibraryApp</string>
+    <string name="book_cover">Book cover</string>
+    <string name="api_error">Something went wrong... Please try later!</string>
+</resources>
